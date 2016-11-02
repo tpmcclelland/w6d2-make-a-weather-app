@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+img { width: 100%; }
+
+// html, body { min-height: 100% }
+
+body {
+    background: linear-gradient( 0deg, RGBA(0, 150, 188, 1.00), RGBA(188, 248, 255, 1.00) );
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    flex: 0.5;
+
+    & .city {
+        color: RGBA(34, 133, 164, 1.00);
+        font-size: 40px;
+    }
+
+    & .datetime {
+        color: RGBA(60, 149, 168, 1.00);
+        font-size: 20px;
+    }
+}
+
+main {
+    flex: 1.5;
+}
+
+
+.settings {
+    // padding: 50px;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    // text-align: center;
+    // flex-direction: column;
+    // height: 50vw;
+
+    & .input-group .form-control {
+        margin-bottom: 40px;
+    }
+
+    & input {
+        width: 50vw;
+    }
+
+    & button {
+        // margin: auto;
+        box-shadow: 5px 5px 10px gray;
+        font-size: 25px;
+    }
+}
+
+.currentDay {
+    text-align: center;
+    color: RGBA(35, 136, 164, 1.00);
+
+    & .temp {
+         font-size: 200px;
+        //  margin: auto;
+    }
+
+    & p {
+        font-size: 75px;
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+
+    & .footer-nav {
+        padding: 30px;
+
+        & .link {
+            color: RGBA(188, 248, 255, .7);
+
+            &:hover {
+                color: RGBA(188, 248, 255, 1);
+            }
+        }
+    }
+}

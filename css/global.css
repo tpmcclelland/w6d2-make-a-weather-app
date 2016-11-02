@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(0deg, RGBA(0, 150, 188, 1), RGBA(188, 248, 255, 1));
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  flex: 0.5;
+}
+
+header .city {
+  color: RGBA(34, 133, 164, 1);
+  font-size: 40px;
+}
+
+header .datetime {
+  color: RGBA(60, 149, 168, 1);
+  font-size: 20px;
+}
+
+main {
+  flex: 1.5;
+}
+
+.settings .input-group .form-control {
+  margin-bottom: 40px;
+}
+
+.settings input {
+  width: 50vw;
+}
+
+.settings button {
+  box-shadow: 5px 5px 10px gray;
+  font-size: 25px;
+}
+
+.currentDay {
+  text-align: center;
+  color: RGBA(35, 136, 164, 1);
+}
+
+.currentDay .temp {
+  font-size: 200px;
+}
+
+.currentDay p {
+  font-size: 75px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+footer .footer-nav {
+  padding: 30px;
+}
+
+footer .footer-nav .link {
+  color: RGBA(188, 248, 255, 0.7);
+}
+
+footer .footer-nav .link:hover {
+  color: RGBA(188, 248, 255, 1);
+}
